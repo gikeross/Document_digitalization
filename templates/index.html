@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Image Digitalization</title>
+        <!-- Other meta tags and title -->
+        <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/styles.css') }}">
+        <style>
+            /* Import Montserrat font from Google Fonts */
+            @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+    
+            /* Apply Montserrat to the body */
+            body {
+                font-family: 'Montserrat', sans-serif;
+            }
+    
+            /* Apply Montserrat to headings */
+            h1, h2, h3, h4, h5, h6 {
+                font-family: 'Montserrat', sans-serif;
+            }
+        </style>
+
+    </head>
+<body>
+    <div id="container_body" class="container">
+
+         <div id="container_head" class="container">
+            <header>
+                <div class="header-content">
+                    <img class ='image_head' src="/static/image_test/left_image.jpeg">
+                    <img class ='image_head' src="/static/image_test/right_image.jpeg">
+                    <h1>Read&Search-Notes</h1>
+                    
+                </div>
+                <p class="description">
+                    This IA will transform your handwritten notes into tidy texts, ready for your research
+                </p>
+                <p class="description">
+                    Upload a picture (.jpg & .jpeg) and check it out!
+                </p>
+            </header>
+        </div>
+        <h2>Upload Image</h2>
+        <form id="uploadForm" method="post" enctype="multipart/form-data">
+            <div class="file-import">
+                <label class="file-upload"><input type="file" id="imageFile" name="imageFile"></label>
+                <button type="button" onclick="uploadImage()">Upload</button>
+            </div>  
+        </form>
+
+        <div id="imageContainer"></div> <!-- This div will contain the uploaded image -->
+
+        <div id="container_kpi" class="container">
+            <h3 class="box-title">Text</h3>
+                <div id="outputContainer" class="box">
+                <ul id="outputList"></ul>
+            </div>
+        </div>
+        <div id="container_kpi" class="container">
+        <h3 class="box-title">Keywords</h3>
+            <div id="keywordsContainer" class="box">
+            <ul id="outputList"></ul>
+        </div>
+            <h3 class="box-title">Rating</h3>
+                <div id="ratingContainer" class="box">
+        </div>
+        </div>
+
+        <div>
+        <h3>Search Links</h3>
+            <div id="searchContainer" class="box">
+        </div>
+
+        </div>
+        <h3>Rate of Confidence</h3>
+            <div id="confidenceContainer" class="box">
+        </div>
+
+        <script src="{{ url_for('static', filename='script.js') }}"></script> <!-- Include the JavaScript file -->
+    </div>
+</body>
+
+</html>

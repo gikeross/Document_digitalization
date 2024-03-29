@@ -1,0 +1,254 @@
+/* Reset and basic styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #c3c7c7;
+    margin: 0;
+    padding: 0;
+}
+
+/* Container styles */
+#container_kpi {
+    display: flex;
+    max-width: 50%;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+#container_body {
+    max-width: 1000px;
+    background-color: #f2f2f2;
+    margin: auto;
+    padding: 20px;
+}
+
+/* Header styles */
+header {
+    background-color: #f2f2f2;
+    text-align: center;
+    padding: 20px 0;
+    max-width: 100%;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 60px 40px -7px;
+    margin-bottom: 55px;
+    border-radius:15px;
+}
+
+.image_head{
+    height: 160px;
+    padding: 0px 20px;
+    margin-bottom: auto;
+}
+.description {
+    /* Add your styles here */
+    font-size: 16px; /* Example: Set font size */
+    color: #0d0101; /* Example: Set text color */
+    font-style: italic; /* Example: Make text italic */
+}
+
+header h1 {
+    font-size: 70px;
+    font-weight: 600;
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: #2124b1;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+/* Upload Image heading */
+h2 {
+    text-align: center;
+    color: #333;
+    font-size: 32px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 1px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+.box-title {
+    margin-top: 12%;
+}
+
+h3 {
+    text-align: center;
+    color: #333;
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 1px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+
+/* Form and input styles */
+form {
+    margin-bottom: 20px;
+}
+
+input[type="file"] {
+    margin-right: 10px;
+}
+
+/* Button styles */
+button {
+    display: inline-block;
+    width: 140px;
+    height: 50px;
+    border-radius: 10px;
+    border: 1px solid #2124b1;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.5s ease-in;
+    z-index: 1;
+    cursor: pointer;
+    margin-left: 10px;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+button::before,
+button::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    width: 0;
+    height: 100%;
+    transform: skew(15deg);
+    transition: all 0.5s;
+    overflow: hidden;
+    z-index: -1;
+}
+
+button::before {
+    left: -10px;
+    background: #15025e;
+}
+
+button::after {
+    right: -10px;
+    background: #1a56a0;
+}
+
+button:hover::before,
+button:hover::after {
+    width: 58%;
+}
+
+button:hover span {
+    color: #aac6ff;
+    transition: 0.3s;
+}
+
+button span {
+    color: #03045e;
+    font-size: 24px;
+    transition: all 0.3s ease-in;
+}
+
+button:hover {
+    background-color: #95a196;
+    cursor: pointer;
+}
+
+/* Image container styles */
+#imageContainer {
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    width: 40%;
+}
+
+/* Output container styles */
+#outputContainer {
+    width: 50%;
+    margin: 0 10px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+/* File upload container styles */
+.file-import {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Other container styles */
+.box {
+    display: flex; /* Use flexbox layout */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    padding: 10px;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    width: 25%;
+    margin: 0 10px;
+    text-align: center;
+    border: 1px solid #ccc;
+    height: auto; 
+    min-height: 100px; /* Set a minimum height */
+    margin-bottom: 50px;
+}
+
+/* Confidence container styles */
+#confidenceContainer {
+    margin: 20px auto;
+    margin-bottom: 40px;
+    width: 40%;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    min-height: 50px;
+}
+
+/* Keywords and Rating container styles */
+#keywordsContainer,
+#ratingContainer {
+    flex: 1;
+    justify-content: left;
+    margin: 0 10px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Search container styles */
+#searchContainer {
+    word-wrap: break-word;
+    margin: 20px auto;
+    margin-bottom: 40px;
+    width: 40%;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    min-height: 50px;
+}
+
+
+/* Styles for the list */
+#outputList {
+    list-style-type: none; /* Remove default bullet points */
+    padding: 0; /* Remove default padding */
+}
+
+#outputList li {
+    margin-bottom: 10px; /* Add margin between list items */
+}
+
+
+
