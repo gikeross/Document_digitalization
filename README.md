@@ -9,22 +9,30 @@ The project is organized into different components:
 # Python Backend (Flask):
 
 The Python backend, built using the Flask framework, serves as the core of the project.
-It handles image processing tasks, including text recognition and transformation.
-Key functionalities such as uploading images, extracting text, and generating search results are implemented in Python.
-Java Functions:
+It utilizes several libraries and APIs to handle image processing tasks and backend functionalities.
+Key libraries used include:
+rake_nltk: Utilized for keyword extraction from the uploaded images. RAKE (Rapid Automatic Keyword Extraction) is a natural language processing algorithm used to identify and extract keywords from text.
+googlesearch: Employed to generate search results based on the extracted keywords. This library enables the application to perform Google searches and retrieve relevant links.
+google.cloud.vision_v1: Integrated to extract text from the uploaded images using Optical Character Recognition (OCR) technology. This library allows the application to analyze images and extract text content accurately.
+This addition provides clarity on the specific functionalities of each library and how they contribute to the image digitalization process in the Python backend.
+
+# Java Functions:
 
 Java functions are utilized for specific tasks that require complex processing or integration with external libraries.
 For example, Java functions might be used for advanced image manipulation or machine learning tasks.
-HTML Templates:
+
+# HTML Templates:
 
 HTML templates are used to create the user interface (UI) for the web application.
 They define the layout and structure of the different pages where users interact with the application.
 Templates are rendered dynamically based on user actions and backend responses.
-CSS Styling:
+
+# CSS Styling:
 
 CSS stylesheets are employed to style the HTML elements and enhance the visual appeal of the UI.
 They define the colors, fonts, layout, and other visual aspects of the web pages.
-Usage:
+
+# Usage:
 To run the Image Digitalization project locally, follow these steps:
 
 Clone the GitHub repository to your local machine.
